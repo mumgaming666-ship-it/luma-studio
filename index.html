@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>LUME Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-logo">LUME</div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+
+  <!-- MEDIA GRID با نام‌های جدید -->
+  <div class="hero-media">
+    <video class="media-item" autoplay muted loop playsinline>
+      <source src="videos/hero.mp4">
+    </video>
+
+    <video class="media-item" autoplay muted loop playsinline>
+      <source src="videos/hero1.mp4">
+    </video>
+
+    <video class="media-item" autoplay muted loop playsinline>
+      <source src="videos/hero2.mp4">
+    </video>
+
+    <video class="media-item" autoplay muted loop playsinline>
+      <source src="videos/hero3.mp4">
+    </video>
+  </div>
+
+  <!-- TEXT -->
+  <div class="hero-content">
+    <h1>LUME</h1>
+    <h2>Studio</h2>
+    <a class="btn-gold" href="#contact">Kostenfreie Erstgespräche</a>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="categories">
+  <div class="cat-card fade-up" onclick="openVideo('videos/drone.mp4')">
+    <div class="cat-icon">🎧</div>
+    <h3>Clubs</h3>
+  </div>
+
+  <div class="cat-card fade-up" onclick="openVideo('videos/shishashop.mp4')">
+    <div class="cat-icon">🍽️</div>
+    <h3>Restaurant</h3>
+  </div>
+
+  <div class="cat-card fade-up" onclick="openVideo('videos/shishabar.mp4')">
+    <div class="cat-icon">🍸</div>
+    <h3>Bars</h3>
+  </div>
+
+  <div class="cat-card fade-up" onclick="openVideo('videos/engagement.mp4')">
+    <div class="cat-icon">📦</div>
+    <h3>Produkte</h3>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+  <h2 class="fade-up">Leistungen</h2>
+
+  <div class="service fade-up">
+    <h3>Content Marketing</h3>
+    <p>
+      Ideen, Konzept, Skripte<br>
+      Video Drehs vor Ort<br>
+      Edit & komplettes Managing
+    </p>
+  </div>
+
+  <div class="service fade-up">
+    <h3>1:1 Coaching</h3>
+    <p>
+      Von Strategie bis fertigem Post
+    </p>
+  </div>
+
+  <div class="service fade-up">
+    <h3>Webdesign</h3>
+    <p>
+      Moderne, responsive & verkaufsstarke Websites
+    </p>
+  </div>
+</section>
+
+<!-- JASER -->
+<section class="jaser">
+  <img src="images/jaser.jpg" class="fade-up">
+  <h2 class="fade-up">JASER MOHAMMADI</h2>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="stat fade-up">128.450.900<br><span>Aufrufe</span></div>
+  <div class="stat fade-up">342.800<br><span>Follower</span></div>
+  <div class="stat fade-up">3.260<br><span>Videos</span></div>
+  <div class="stat fade-up">6.980<br><span>Ads</span></div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <form action="https://formspree.io/f/2679b02d3c6d4c77bf4a180127d05fc4" method="POST" class="fade-up">
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" placeholder="Nachricht"></textarea>
+    <button type="submit">Absenden</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>LUME Studio · Mannheim</p>
+  <p>Email: <a href="mailto:info@lumestudio.de">info@lumestudio.de</a> | Telefon: <a href="tel:+491234567890">+49 123 4567890</a></p>
+</footer>
+
+<!-- VIDEO MODAL -->
+<div id="videoModal" class="modal" onclick="closeVideo()">
+  <video id="modalVideo" controls></video>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
